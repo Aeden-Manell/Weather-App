@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+
+body {
+  margin-top: 50px;
+  font-family: "Poetsen One", sans-serif;
+  background-color: rgba(0, 0, 0, 0.641);
+  backdrop-filter: blur(15px);
+  margin-bottom: 390px;
+  background: linear-gradient(-45deg, #ff0058, #ffbc00, #ff0058, #ffbc00);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.main {
+  border: rgba(255, 255, 255, 0.627) solid 5px;
+  background: linear-gradient(315deg, #00a6ff, #ffd900);
+  border-radius: 40px;
+  padding: 40px;
+  padding-bottom: 120px;
+  width: 707px;
+  height: 929px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.topbar {
+  border: rgba(255, 255, 255, 0.724) solid 10px;
+  background-color: rgba(255, 255, 255, 0.627);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  padding: 20px;
+}
+
+.topbar input {
+  font-family: "Poetsen One", sans-serif;
+  display: flex;
+  width: 462px;
+  background-color: rgba(255, 255, 255, 0.811);
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  padding-left: 50px;
+  color: rgb(84, 84, 84);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.searchicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.811);
+  padding: 7px;
+  width: 50px;
+  height: 50px;
+}
+
+.searchicon:hover {
+  transition: all 0.3s;
+  background-color: #000000;
+  position: relative;
+  cursor: pointer;
+}
+
+.weatherimage {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.weathertemp {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.weatherlocation {
+  color: white;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.weathersection {
+  padding: 40px;
+  margin-top: 60px;
+  display: flex; /* Enable flexbox layout for side-by-side columns */
+  border-bottom: 3px solid white;
+}
+
+.imagediv,
+.detailsdiv {
+  flex: 1; /* Make both divs share available space equally */
+}
+
+/* Optional styling for individual divs */
+
+.detailsdiv {
+  display: flex; /* Make details-div content stack vertically */
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 70px;
+  align-items: flex-start; /* Align content to the left */
+}
+
+.datacontainer {
+  align-items: center;
+  margin-top: 30px;
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+
+.element {
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  border-radius: 10px;
+}
+
+.element:hover {
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.text {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.data {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.icon {
+  margin-top: 10px;
+}
+
+#detailstext {
+  font-size: 60px;
+}
+
+#feelsliketext {
+  margin-top: 20px;
+  color: white;
+  font-size: 25px;
+}
+
+.co-ordinates {
+  display: flex;
+  color: white;
+  margin-right: 90px;
+}
+
+.lon {
+  margin: 50px;
+}
+
+.lat {
+  margin: 50px;
+}
+
+.card {
+  backdrop-filter: blur(10px);
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.04) rotate(-3deg);
+}
